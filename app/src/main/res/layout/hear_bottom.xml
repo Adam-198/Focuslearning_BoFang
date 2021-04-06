@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/hear_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:hint="发个弹幕biu一下~"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="7dp"
+            android:textColor="@color/word_black"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/hear_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:text="发射"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/hear_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hear_share_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hear_share" />
+
+            <TextView
+                android:id="@+id/hear_share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="分享"
+                android:textColor="@color/word_black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hear_like"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hear_like_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hear_xihuan" />
+
+            <TextView
+                android:id="@+id/hear_like_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="喜欢"
+                android:textColor="@color/word_black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hear_star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hear_star_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hear_shoucang" />
+
+            <TextView
+                android:id="@+id/hear_star_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="收藏"
+                android:textColor="@color/word_black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hear_shewei"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hear_shewei_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hear_tianjia" />
+
+            <TextView
+                android:id="@+id/hear_shewei_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="设为"
+                android:textColor="@color/word_black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

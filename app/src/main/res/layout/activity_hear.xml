@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/hear_bg">
+
+    <include layout="@layout/activity_top" />
+
+    <RelativeLayout
+        android:id="@+id/guaznhu_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:id="@+id/guanzhu_id"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/guanzhu_pic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/touxiang"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"/>
+
+            <TextView
+                android:id="@+id/guanzhu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="五战上华工"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/guanzhu_pic"/>
+            <Button
+                android:id="@+id/guanzhu_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/guanzhu_name"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/album_id"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guanzhu_id"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/album_pic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/album_bg"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专辑_我要上华工"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/album_pic"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <include layout="@layout/hear_bottom" />
+
+</RelativeLayout>
